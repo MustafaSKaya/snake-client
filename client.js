@@ -7,7 +7,8 @@ const connect = function () {
     port: '50541',
   });
   conn.on("connect", () => {
-    console.log('here we go') // code that does something when the connection is first established
+    console.log("Successfully connected to game server"); // code that does something when the connection is first established
+    conn.write(`Name: meh`);
   });
   conn.on('data', (data) => {
     console.log('Server says: ', data);
