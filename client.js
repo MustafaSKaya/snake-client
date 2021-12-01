@@ -9,6 +9,10 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("Successfully connected to game server"); // code that does something when the connection is first established
     conn.write(`Name: meh`);
+    conn.write(`Move: up`);
+    conn.write(`Move: down`);
+    conn.write(`Move: left`);
+    conn.write(`Move: right`);
   });
   conn.on('data', (data) => {
     console.log('Server says: ', data);
