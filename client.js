@@ -10,7 +10,7 @@ const connect = function () {
     console.log("Successfully connected to game server"); // code that does something when the connection is first established
     conn.write(`Name: MSK`);
     //conn.write(`Move: up`);
-    conn.write(`Move: down`);
+    //conn.write(`Move: down`);
     //conn.write(`Move: left`);
     //conn.write(`Move: right`);
   });
